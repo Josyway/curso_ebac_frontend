@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, footer {
+    padding: 16px 0 0;
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+    background-color: #a12303;
+    color: #f7a309;
+    text-transform: uppercase;
+}
+
+
+header img {
+    width: 40px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f7a309;
+    color: #a12303;
+}
+
+footer > .container  {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    display: flex;
+}
+
+.quem-somos .loja {
+    display:grid;
+    grid-template-columns: repeat(2, 49%);
+}
+
+.submenu {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    top: 100%;
+    border: 1px solid red
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    border-color: red;
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+}
+
+.loja img {
+    max-width: 100%;
+}
+
+.destaque {
+    margin-bottom: 56px;
+}
+
+.destaque .loja a {
+    display: flex;
+    font-size: 1.8em;
+    }
+
+p {
+    text-transform: uppercase;
+}
+.destaque .loja {
+    display: block;
+    font-size: 1em;
+}
+
+.destaque .loja img {
+    margin-right: 10px;
+}
+
+section h2 {
+    margin-bottom: 32px;
+    margin-top: 32px;
+    border-bottom: solid 2px;
+    color: #f7a309;
+}
+
+.quem-somos div {
+    margin-left: 32px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.produtos button {
+    max-width: 90%;
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #a12303;
+    color: #f7a309;
+    justify-items: center;
+    border-radius: 10px;
+    
+}
+
+@media screen and (max-width: 640px) {
+    .quem-somos .loja {
+        display: block;
+    }
+
+    .quem-somos div {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .destaque .loja a {
+        display: block;
+        font-size: 1.5em;
+    }
+    
+    .destaque .loja img {
+        margin-right: 0;
+    }
+
+    .produtos{
+        display: block;
+    }
+
+    .produtos .loja {
+        margin-bottom: 32px;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .submenu {
+        display: block;
+        position: relative;
+        width: 100%;
+        border: none 
+        }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu > li {
+        clear: both;
+    }
+    
+    .menu li:hover {
+        border-color: red;
+    }
+    
+    .submenu li {
+        display: block;
+        padding: 8px;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .botao-menu button {
+        padding: 16px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+        
+    .botao-menu {
+        display: none;
+    }
+
+    .destaque .loja a {
+        font-size: 1.5em;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    footer {
+        margin-top: 56px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+.container-flex {
+    display: flex;
+    padding: 10px;
+}
+

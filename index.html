@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bike Shop 
+                <img src="./imagens/logo.png" alt="">
+            </h1>
+            <form class="pesquisa">
+                <input type="search" placeholder="Pesquisar...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Produtos
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Bikes</a>
+                        </li>
+                        <li>
+                            <a href="#">Acessórios</a>
+                        </li>
+                        <li>
+                            <a href="#">Peças</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Categoria
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Competição</a>
+                        </li>
+                        <li>
+                            <a href="#">Mountain Bike</a>
+                        </li>
+                        <li>
+                            <a href="#">Urbano</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="quem-somos">
+                <article class="loja">
+                    <a href="#"><img src="./imagens/loja.png"/></a>
+                    <div>
+                        <h2>Quem Somos</h2>
+                        <h3>
+                            <p>A Bike Shop é uma das maiores Lojas de bicicletas do Brasil. São mais de 1000 produtos, contando com uma grande variedade de Bicicletas de passeio, urbano, mountain bike e competição. </p>
+                        </h3>
+                    <div>
+                </article>
+            </section>
+            <section>
+                <h2>Produtos</h2>
+                <div class="produtos">
+                    <article class="loja">
+                        <a href="#">
+                            <img src="./imagens/gts_m1.png"/>
+                            <h3>
+                                BICICLETA 29 GTS M1 FREIO HIDRÁULICO 27V I-VTEC MX9 MAGNÉSIO
+                            </h3>
+                        </a>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </article>
+                    <article class="loja">
+                        <a href="#">
+                            <img src="./imagens/gts_m2.png"/>
+                            <h3>
+                                BICICLETA 29 GTS M5 FREIO HIDRÁULICO 24V I-VTEC MX9 MAGNÉSIO
+                            </h3>
+                        </a>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </article>
+                    <article class="loja">
+                        <a href="#">
+                            <img src="./imagens/gts_m3.png"/>
+                            <h3>
+                                BICICLETA 29 GTS M1 FREIO A DISCO 24V SHIMANO TOURNEY
+                            </h3>
+                        </a>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </article>
+                    <article class="loja">
+                        <a href="#">
+                            <img src="./imagens/gts_m4.png"/>
+                            <h3>
+                                BICICLETA 29 GTS M1 FREIO A DISCO SEM MARCHAS I-VTEC CAIÇARA
+                            </h3>
+                        </a>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2024 &copy; Bike Shop - Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+                </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
