@@ -1,0 +1,118 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Roboto";
+}
+
+header,
+section h2 {
+    font-family: "Bungee", normal;
+    font-weight: normal;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #a12303;
+    color: #f7a309;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header nav li {
+    display: inline;
+    margin: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #f7a309;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    color: #a12303;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+    height: 380px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+.social-links{
+    margin-right: 56px;
+}
+
+.site-game img {
+    height: 80px;
+}
+
+form button {
+    width: 320px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #a12303;
+    color: #f7a309;
+    padding: 16px 0;
+    display: flex;
+    justify-items: center;
+}
+
