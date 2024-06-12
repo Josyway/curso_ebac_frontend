@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Way Game</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div>
+        <div id="cabecalho" class="container fixed-top">
+            <header>
+                <div class="navbar navbar-expand-lg">
+                    <img src="./images/wg2.png" alt="">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" style="background-color: #ebebeb54;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                        <ul class="nav navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#inicio">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#lancamento">Lançamentos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#promocao">Promoções</a>
+                            </li>
+                            <div>
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#mansagem">Contato</button>
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="inicio">
+            <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="4000" class="carousel-item active">
+                        <img src="./images/cd_wz.png" class="d-block w-100">
+                    </div>
+                    <div data-bs-interval="4000" class="carousel-item">
+                        <img src="./images/gta5.png" class="d-block w-100">
+                    </div>
+                    <div data-bs-interval="4000" class="carousel-item">
+                        <img src="./images/nfs.png" class="d-block w-100">
+                    </div>
+                    <div data-bs-interval="4000" class="carousel-item">
+                        <img src="./images/rdr2.png" class="d-block w-100">
+                    </div>
+                    <div data-bs-interval="4000" class="carousel-item">
+                        <img src="./images/witcher.png" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-example" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-example" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="3" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+            </div>
+        </section>
+        <section id="lancamento">
+            <div class="container">
+                <div class="row">
+                    <h2>Lançamentos</h2>
+                    <div class="col-lg-4 col-se-8 col-md-6">
+                        <div class="card text-bg-dark">
+                            <img src="./images/card/rdr3.jpg" alt="">
+                            <h4 class="card-title">Red Dead Redemption III</h4>
+                            <a href="#" class="btn btn-primary">Sobre o Game</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-se-8 col-md-6">
+                        <div class="card text-bg-dark">
+                            <img src="./images/card/GTA-VI.jpg" alt="">
+                            <h4 class="card-title">Grand Theft Auto VI</h4>
+                            <a href="#" class="btn btn-primary">Sobre o Game</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-se-8 col-md-6">
+                        <div class="card text-bg-dark">
+                            <img src="./images/card/f1-2024.jpg" alt="">
+                            <h4 class="card-title">Formula 1 2024</h4>
+                            <a href="#" class="btn btn-primary">Sobre o Game</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="promocao">
+            <div class="container">
+                <div class="row">
+                    <h2>Promoções</h2>
+                    <div class="col-lg-4 col-se-8 col-md-6">
+                        <div class="card text-bg-dark">
+                            <img src="./images/card/rdr2.jpg" alt="">
+                            <h4 class="card-title">Red Dead Redemption II</h4>
+                            <a href="#" class="btn btn-primary">Sobre o Game</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-se-8 col-md-6">
+                        <div class="card text-bg-dark">
+                            <img src="./images/card/nfs.jpg" alt="">
+                            <h4 class="card-title">Need For Speed Wivais</h4>
+                            <a href="#" class="btn btn-primary">Sobre o Game</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-se-8 col-md-6">
+                        <div class="card text-bg-dark">
+                            <img src="./images/card/mw.jpg" alt="">
+                            <h4 class="card-title">Call Of Duty MW</h4>
+                            <a href="#" class="btn btn-primary">Sobre o Game</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="contato">
+            <div class="modal" id="mansagem" data-bs-backdrop="static">
+                <div class="modal-dialog bs-modal-dark">
+                    <div class="modal-content" style="background-color: #10111857; color: #ebebeb;"> 
+                        <div class="modal-header">
+                            <h5>Login</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <label class="form-label" for="nome">Seu nome:</label>
+                                <input class="form-control" type="text" id="nome">
+                                <label for="email" class="form-label">Seu e-mail:</label>
+                                <input id="email" type="email" class="form-control">
+                                <label for="tel" class="form-label">Seu telefone:</label>
+                                <input id="tel" type="tel" class="form-control">
+                                <label for="mansagem" class="form-label">Sua Mensagem:</label>
+                                <textarea id="mensagem" class="form-control"></textarea>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="aceito-termos">
+                                    <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" data-bs-dismiss="modal">Enviar</button>
+                                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal" id="login" data-bs-backdrop="static">
+            <div class="modal-dialog bs-modal-dark">
+                <div class="modal-content" style="background-color: #10111857; color: #ebebeb;"> 
+                    <div class="modal-header">
+                        <h5>Login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label class="form-label" for="nome">Login:</label>
+                            <input class="form-control" type="text" id="nome">
+                            <label for="senha" class="form-label">Senha:</label>
+                            <input id="senha" type="password" class="form-control">
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">Login</button>
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                <div>
+                                    <a href="#">Esqueci minha senha</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 p-0">
+            <h2 id="perguntas">Perguntas Frequentes</h2>
+            <div class="accordion p-3" data-bs-theme="dark">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">O que é a Way Game?</button>
+                    </div>
+                    <div id="resposta1" class="accordion-collpase collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <p>Uma das melhores lojas on-liner de games.</p>
+                                </li>
+                                <li>
+                                    <p>Experiência de entretenimento exclusiva.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">Quais as formas de pagamento?</button>
+                    </div>
+                    <div id="resposta2" class="accordion-collpase collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <p>
+                                    Aceitamos: cartão de débito, cartão de crédito, PayPal, Mercado Pago e Pix.
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; Josyway Paulo - Todos os direitos reservados - 2024
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
