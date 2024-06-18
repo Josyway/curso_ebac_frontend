@@ -1,0 +1,72 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar{
+    background-color: #1b1241;
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: #f79606;
+    color: #1b1241;;
+    
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+#cabecalho .nav .nav-link,
+.nav-cardapio .nav-link.active:hover{
+    color: #f79606;
+}
+
+.navbar-toggler{
+    background-color:  #f79606;
+}
+
+.section-title{
+    font-family: Pacifico, cursive;
+}
+
+.text-colored{
+    color:  #f79606;;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button{
+    background-color: #1b1241;;
+    color:  #f79606;
+}
+
+.nav-cardapio .nav-link:hover{
+    color:  #f79606;;
+}
+
+#sobre-o-escritorio,
+#servicos{
+    background-color:  #25137228;
+}
+
+#assessorias,
+#fale-conosco{
+    background-color:  #2b1d6915;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+footer{
+    background-color: #1b1241;;
+    color:  #f79606;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img{
+        height: 280px;
+    }
+}
