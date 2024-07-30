@@ -1,35 +1,23 @@
-function Pessoa(nome) {
+function Pais(nome, continente, população) {
     this.nome = nome;
-    this.dizNome = function() {
-        console.log(this.nome)
-    }
+    this.continente = continente;
+    this.população = população;
 }
 
-function Vinculo(vinculo){
-    this.vinculo = vinculo;
-    
-    this.dizVinculo = function() {
-        console.log(this.vinculo)
-    }
+function Estado(nome, continente, população, municipios) {
+    Pais.call(this, nome, continente, população);
+    this.municipios = municipios;
 }
 
-function Funcionario(nome, vinculo, cargo, salario){
-    Pessoa.call(this, nome);
-    Vinculo.call(this, vinculo);
-    this.cargo = cargo;
-    let _salario = salario;
-
-    this.dizSalario = function() {
-        return _salario;
-    }
-    
-    this.dizCargo = function() {
-        console.log(this.cargo)
-    }
+function Cidade(nome, continente, população, região) {
+    Pais.call(this, nome, continente, população);
+    this.região = região;
 }
 
-const funcionario1 = new Funcionario("Paulo", "Funcionário", "Desenvolvedor", 5000)
+const Brasil = new Pais("Brasil", "Sul Americano", "203.080.756");
+const RN = new Estado("Rio Grande do Norte", "Sul Americano", "3.302.000", 167);
+const Natal = new Cidade("Natal", "Sul Americano",  751.300, "Nordeste");
 
-funcionario1.dizNome() + funcionario1.dizVinculo() + funcionario1.dizCargo();
-
-console.log(funcionario1.dizSalario());
+console.log(Brasil);
+console.log(RN);
+console.log(Natal);
